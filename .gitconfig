@@ -22,6 +22,7 @@
 	b      = branch
 	co     = checkout
 	ci     = commit
+	cm     = commit -m
 	ch     = cherry -v
 	d      = diff -b
 	dc     = diff -b --cached
