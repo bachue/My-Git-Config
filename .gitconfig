@@ -1,6 +1,7 @@
 [core]
 	; autocrlf = input
 	safecrlf = warn
+	excludesfile = /home/bachue/.gitignore
 	; gitproxy = gitproxy
 [branch]
 	autosetuprebase = always
@@ -45,3 +46,5 @@
 	edit-unmerged   = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; gvim `f`"
 	add-unmerged    = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; git add `f`"
 	today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
+	unstage = reset HEAD --
+	last	= log -1 HEAD
