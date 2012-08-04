@@ -33,7 +33,7 @@
 	s      = status
 	show    = show -b
 	st     = stash
-    sts     = stash show
+    sts     = stash show -p
     sts1    = stash show stash@{1} -p
     sts2    = stash show stash@{2} -p
     sts3    = stash show stash@{3} -p
