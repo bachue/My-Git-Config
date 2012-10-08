@@ -3,6 +3,7 @@
 	safecrlf = warn
 	excludesfile = /home/bachue/.gitignore
 	; gitproxy = gitproxy
+	editor = vim
 [branch]
 	autosetuprebase = always
 [color]
