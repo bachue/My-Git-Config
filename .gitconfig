@@ -3,6 +3,7 @@
 	safecrlf = warn
 	excludesfile = /Users/rongz/.gitignore_global
 	; gitproxy = gitproxy
+	editor = vim
 [branch]
 	autosetuprebase = always
 [color]
