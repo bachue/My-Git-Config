@@ -1,7 +1,7 @@
 [core]
 	; autocrlf = input
 	safecrlf = warn
-	excludesfile = /home/bachue/.gitignore
+	excludesfile = /Users/rongz/.gitignore_global
 	; gitproxy = gitproxy
 [branch]
 	autosetuprebase = always
@@ -48,3 +48,9 @@
 	today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
 	unstage = reset HEAD --
 	last	= log -1 HEAD
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
