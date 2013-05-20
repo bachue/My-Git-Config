@@ -4,3 +4,5 @@
 .rvmrc
 *.so
 *.bundle
+*.sublime-project
+*.sublime-workspace
