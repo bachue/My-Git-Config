@@ -1,7 +1,7 @@
 [core]
 	; autocrlf = input
 	safecrlf = warn
-	excludesfile = /Users/rongz/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	; gitproxy = gitproxy
 	editor = vim
 [github]
