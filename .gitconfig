@@ -44,7 +44,8 @@
 	edit-unmerged   = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; gvim `f`"
 	l		= log -p
 	last	= log -1 HEAD
-    lg     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lol     = log --oneline --graph --all --decorate
 	mt      = mergetool -y
 	pr		= pull-request
 	ps		= log --pretty=oneline origin..master
