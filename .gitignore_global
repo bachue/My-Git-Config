@@ -8,3 +8,4 @@
 *.bundle
 *.sublime-project
 *.sublime-workspace
+*.cache
