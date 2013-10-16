@@ -1,3 +1,4 @@
 set show-line-numbers = yes
+set line-number-interval = 1
 bind generic ^f scroll-page-down
 bind generic ^b scroll-page-up
