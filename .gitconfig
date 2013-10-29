@@ -51,6 +51,7 @@
     lg      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     lol     = log --oneline --graph --all --decorate
     mt      = mergetool -y
+    ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
     pr		= pull-request
     ps		= log --pretty=oneline origin..master
     rb		= rebase
@@ -63,6 +64,7 @@
     show	= show -b
     showw	= show -b --word-diff=color
     sm		= submodule
+    snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
     st		= stash
     stl		= stash list
     stp		= stash pop
@@ -77,6 +79,7 @@
     sts3	= stash show stash@{3} -p
     sts4	= stash show stash@{4} -p
     sts5	= stash show stash@{5} -p
+    theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
     today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
     unassume = update-index --no-assume-unchanged
     unstage = reset HEAD --
