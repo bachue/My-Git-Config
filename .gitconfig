@@ -12,6 +12,7 @@
 	ui = auto
 [diff]
     renames = copies
+    algorithm = patience
 [user]
 	name = Bachue Zhou
 	email = bachue.shu@gmail.com
