@@ -47,6 +47,7 @@
     dt		= difftool
     dw		= diff -b --word-diff=color
     edit-unmerged   = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; gvim `f`"
+    ignored = status --ignored
     l		= log -p
     last	= log -1 HEAD
     lg      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
