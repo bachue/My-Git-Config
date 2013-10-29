@@ -30,7 +30,7 @@
     au		= add -u
     b		= branch
     b       = branch
-    check   = diff --check
+    check   = "!git --no-pager diff --check"
     cb		= checkout -b
     ch		= cherry -v
     ci		= commit
