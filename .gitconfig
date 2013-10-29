@@ -21,64 +21,67 @@
 [push]
 	default = current
 [alias]
-	a		= add
-	aa		= add .
-	add-unmerged    = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; git add `f`"
-	amr		= am --resolved
-	au		= add -u
-	b		= branch
-	b       = branch
-	cb		= checkout -b
-	ch		= cherry -v
-	ci		= commit
-	cia		= commit --amend
-	cm      = commit -m
-	co		= checkout
-	co      = checkout
-    diff    = diff --color-words='[^[:space:]]+|.'
+    a		= add
+    aa		= add .
+    add-unmerged    = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; git add `f`"
+    amr		= am --resolved
+    assume   = update-index --assume-unchanged
+    assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+    au		= add -u
+    b		= branch
+    b       = branch
+    cb		= checkout -b
+    ch		= cherry -v
+    ci		= commit
+    cia		= commit --amend
+    cm      = commit -m
+    co		= checkout
+    co      = checkout
     d		= diff -b --color-words='[^[:space:]]+|.'
-	dc		= diff -b --cached
-	dct		= difftool --cached
-	dcw		= diff -b --cached --word-diff=color
-	ds		= diff -b --stat
-	dt		= difftool
-	dw		= diff -b --word-diff=color
-	edit-unmerged   = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; gvim `f`"
-	l		= log -p
-	last	= log -1 HEAD
+    dc		= diff -b --cached
+    dct		= difftool --cached
+    dcw		= diff -b --cached --word-diff=color
+    diff    = diff --color-words='[^[:space:]]+|.'
+    ds		= diff -b --stat
+    dt		= difftool
+    dw		= diff -b --word-diff=color
+    edit-unmerged   = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; gvim `f`"
+    l		= log -p
+    last	= log -1 HEAD
     lg      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     lol     = log --oneline --graph --all --decorate
-	mt      = mergetool -y
-	pr		= pull-request
-	ps		= log --pretty=oneline origin..master
-	rb		= rebase
-	rba		= rebase --abort
-	rbc		= rebase --continue
-	rbi		= rebase -i
-	rt		= reset
-	rth		= reset --hard
-	s		= status
-	show	= show -b
-	showw	= show -b --word-diff=color
-	sm		= submodule
-	st		= stash
-	stl		= stash list
-	stp		= stash pop
-	stp1	= stash pop stash@{1}
-	stp2	= stash pop stash@{2}
-	stp3	= stash pop stash@{3}
-	stp4	= stash pop stash@{4}
-	stp5	= stash pop stash@{5}
-	sts		= stash show -p
-	sts1	= stash show stash@{1} -p
-	sts2	= stash show stash@{2} -p
-	sts3	= stash show stash@{3} -p
-	sts4	= stash show stash@{4} -p
-	sts5	= stash show stash@{5} -p
-	today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
-	w		= whatchanged
-	wc		= whatchanged -p
-	unstage = reset HEAD --
+    mt      = mergetool -y
+    pr		= pull-request
+    ps		= log --pretty=oneline origin..master
+    rb		= rebase
+    rba		= rebase --abort
+    rbc		= rebase --continue
+    rbi		= rebase -i
+    rt		= reset
+    rth		= reset --hard
+    s		= status
+    show	= show -b
+    showw	= show -b --word-diff=color
+    sm		= submodule
+    st		= stash
+    stl		= stash list
+    stp		= stash pop
+    stp1	= stash pop stash@{1}
+    stp2	= stash pop stash@{2}
+    stp3	= stash pop stash@{3}
+    stp4	= stash pop stash@{4}
+    stp5	= stash pop stash@{5}
+    sts		= stash show -p
+    sts1	= stash show stash@{1} -p
+    sts2	= stash show stash@{2} -p
+    sts3	= stash show stash@{3} -p
+    sts4	= stash show stash@{4} -p
+    sts5	= stash show stash@{5} -p
+    today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
+    unassume = update-index --no-assume-unchanged
+    unstage = reset HEAD --
+    w		= whatchanged
+    wc		= whatchanged -p
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
