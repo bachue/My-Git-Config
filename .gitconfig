@@ -30,6 +30,7 @@
     au		= add -u
     b		= branch
     b       = branch
+    check   = diff --check
     cb		= checkout -b
     ch		= cherry -v
     ci		= commit
