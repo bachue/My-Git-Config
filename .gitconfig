@@ -84,6 +84,7 @@
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
     today = !git log --since=\"12 hours ago\" --author=\"`git config --get user.name`\" --reverse --pretty=format:%s
     unassume = update-index --no-assume-unchanged
+    unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; f"
     unstage = reset HEAD --
     w		= whatchanged
     wc		= whatchanged -p
