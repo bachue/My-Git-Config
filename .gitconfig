@@ -86,6 +86,7 @@
     unassume = update-index --no-assume-unchanged
     unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; f"
     unstage = reset HEAD --
+    untracked = ls-files --others --exclude-standard
     w		= whatchanged
     wc		= whatchanged -p
 [difftool "sourcetree"]
