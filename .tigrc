@@ -1,4 +1,6 @@
-set show-line-numbers = yes
-set line-number-interval = 1
-bind generic ^f scroll-page-down
-bind generic ^b scroll-page-up
+set blame-view = date:default author:full file-name:auto id:yes,color line-number:yes,interval=1 text
+set grep-view = file-name:yes line-number:yes,interval=1 text
+set tree-view = line-number:no,interval=1 mode author:full file-size:units date:default id:no file-name
+set pager-view = line-number:yes,interval=1 text
+bind generic <Ctrl-f> scroll-page-down
+bind generic <Ctrl-b> scroll-page-up
