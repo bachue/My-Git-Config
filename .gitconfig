@@ -68,6 +68,7 @@
     sm		= submodule
     snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
     st		= stash
+    staged  = diff --name-only --cached
     stl		= stash list
     stp		= stash pop
     stp1	= stash pop stash@{1}
@@ -86,6 +87,7 @@
     unassume = update-index --no-assume-unchanged
     unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; f"
     unstage = reset HEAD --
+    unstaged  = diff --name-only
     untracked = ls-files --others --exclude-standard
     w		= whatchanged
     wc		= whatchanged -p
