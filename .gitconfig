@@ -13,6 +13,7 @@
 [diff]
     renames = copies
     algorithm = patience
+    renameLimit = 3000
 [user]
 	name = Bachue Zhou
 	email = bachue.shu@gmail.com
