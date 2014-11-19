@@ -54,9 +54,10 @@
     lg      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     lol     = log --oneline --graph --all --decorate
     mt      = mergetool -y
-    ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
+    ours    = "!f() { git checkout --ours $@ && git add $@; }; f"
     pr		= pull-request
     ps		= log --pretty=oneline origin..master
+    pullall = pull --recurse-submodules
     rb		= rebase
     rba		= rebase --abort
     rbc		= rebase --continue
