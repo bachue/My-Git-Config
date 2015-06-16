@@ -98,3 +98,5 @@
 	smudge = git-media-smudge %f
 [rerere]
 	enable = false
+[http]
+	postBuffer = 2147483647
