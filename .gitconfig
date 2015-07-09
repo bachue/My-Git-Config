@@ -19,6 +19,8 @@
 	summary = true
 [push]
 	default = current
+[fetch]
+    recurseSubmodules = true
 [alias]
     a		= add
     aa		= add .
