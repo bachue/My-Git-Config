@@ -47,7 +47,7 @@
     ds		= diff -b --stat
     dt		= difftool
     dw		= diff -b --word-diff=color
-    edit-unmerged   = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; gvim `f`"
+    edit-unmerged   = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; $EDITOR `f`"
     ignored = status --ignored
     l		= log -p
     last	= log -1 HEAD
