@@ -65,6 +65,7 @@
     rt		= reset
     rth		= reset --hard
     s		= status
+    sb		= status -sb
     show	= show -b
     showw	= show -b --word-diff=color
     sm		= submodule
