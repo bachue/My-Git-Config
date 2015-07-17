@@ -8,6 +8,8 @@
 	autosetuprebase = always
 [color]
 	ui = auto
+[commit]
+    gpgSign = true
 [diff]
     renames = copies
     algorithm = patience
