@@ -21,7 +21,7 @@
 	summary = true
     tool = vimdiff
 [push]
-	default = current
+	default = simple
 [fetch]
     recurseSubmodules = true
 [alias]
