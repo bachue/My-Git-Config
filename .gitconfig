@@ -22,8 +22,6 @@
     tool = vimdiff
 [push]
 	default = simple
-[fetch]
-    recurseSubmodules = true
 [alias]
     a		= add
     aa		= add .
