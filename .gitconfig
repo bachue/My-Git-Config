@@ -39,11 +39,10 @@
     cm      = commit -m
     co		= checkout
     co      = checkout
-    d		= diff -b --color-words='[^[:space:]]+|.'
+    d       = diff
     dc		= diff -b --cached
     dct		= difftool --cached
     dcw		= diff -b --cached --word-diff=color
-    diff    = diff --color-words='[^[:space:]]+|.'
     ds		= diff -b --stat
     dt		= difftool
     dw		= diff -b --word-diff=color
