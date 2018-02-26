@@ -21,12 +21,6 @@
 [merge]
 	summary = true
     tool = vimdiff
-[pager]
-    log = "`brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less"
-    diff = "`brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less"
-    show = "`brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less"
-[interactive]
-    diffFilter = "`brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less"
 [push]
 	default = simple
 [alias]
