@@ -4,9 +4,9 @@
 .rvmrc
 .ruby-version
 .ruby-gemset
+*.a
 *.so
 *.bundle
 *.sublime-project
 *.sublime-workspace
 *.cache
-.agignore
