@@ -2,6 +2,7 @@
 	safecrlf = warn
 	excludesfile = ~/.gitignore_global
 	editor = vim
+	autocrlf = false
 [github]
     user = bachue
 [branch]
@@ -18,11 +19,10 @@
 [user]
 	name = Bachue Zhou
 	email = bachue.shu@gmail.com
-[merge]
-	summary = true
-    tool = vimdiff
 [push]
 	default = simple
+[receive]
+    denyNonFastForwards = true
 [alias]
     add-unmerged    = "!f() { git ls-files -u | awk '{print $NF}' | sort -u; }; git add `f`"
     amr		= am --resolved
